@@ -10,6 +10,7 @@ for i = 1, reproducetimes do
 			local clone = plant:Clone()
 			clone.Parent = Environment
 			clone.Position = plant.Position + Vector3.New(math.random(-20, 20),0,math.random(-20, 20))
+			clone.Generation.Value += 1
 			break
 		end
 	end
